@@ -1,3 +1,4 @@
+// 2021-12-13
 function solution(n, m) {
     var answer = [];
     var bigger = n > m ? n : m;
