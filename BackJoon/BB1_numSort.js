@@ -1,7 +1,7 @@
 // 2022-01-07
 var fs = require('fs');
-// let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\n');
+let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+// var input = fs.readFileSync('예제.txt').toString().trim().split('\n');
 
 var length = input.splice(0, 1);
 var answer = []
@@ -13,3 +13,5 @@ input.forEach(value => {
     answer = answer + value + "\n"
 })
 console.log(answer);
+
+//2751번도 동일한 코드로 해결됐다.
