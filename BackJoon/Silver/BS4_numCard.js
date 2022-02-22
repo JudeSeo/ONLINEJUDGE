@@ -7,7 +7,7 @@ let m = input[3].split(" ");
 n.sort((a, b)=> (a-b));
 let answer = new Array(m.length).fill(0);
 n.forEach((v, i)=>{
-    let index = m.find(v)
+    let index = m.indexOf(v)
     if (index >= 0) {
         answer[index] = 1;
     }
