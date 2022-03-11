@@ -23,7 +23,8 @@ input.forEach((v, i) => {
             answer.push(stack.length === 0 ? 1 : 0);
             break;
         case "pop":
-            answer.push(stack.length === 0 ? -1 : stack.shift());
+            answer.push(stack.length === 0 ? -1 : stack[0]);
+            stack = stack.slice(1);
             break;
     }
 })
