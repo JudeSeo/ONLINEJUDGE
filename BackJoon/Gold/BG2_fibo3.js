@@ -7,3 +7,5 @@ for (let i = 2; i <= input; i++) {
     answer[i] = ((BigInt(answer[i - 1]) + BigInt(answer[i - 2])) % 1000000n);
 }
 console.log(answer[input].toString());
+
+// 메모리초과....
