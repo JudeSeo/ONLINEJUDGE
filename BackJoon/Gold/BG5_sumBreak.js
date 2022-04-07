@@ -17,3 +17,5 @@ function factorial(num1, num2) {
     }
     return result;
 }
+
+// 예제는 풀리는데.... 틀렸다.. 중복조합으로 풀 수 있는거 같은데.. 다른걸로 풀어야 하는듯..
