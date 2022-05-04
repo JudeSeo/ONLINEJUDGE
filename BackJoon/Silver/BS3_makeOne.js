@@ -20,3 +20,5 @@ while (input > 1) {
     }
 }
 console.log(answer);
+
+// dp로 풀어야하는듯
