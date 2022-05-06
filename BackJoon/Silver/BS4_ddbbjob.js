@@ -1,20 +1,26 @@
-// 2022-03-06
+// 2022-03-06 -> // 2022-05-06
 var fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let answer = [];
-let d = input[0].split(" ")[0];
-let b = input[0].split(" ")[1];
+let [d, b] = input[0].split(" ");
 input = input.slice(1);
-let dd = input.slice(0, d);
-let bb = input.slice(d);
+let dd = new Set();
+let bb = new Set();
+for(let i=0; i<input.length; i++) {
+    if(i < d) {
+        dd.add(input[i]);
+    } else {
+        bb.add(input[i]);
+    }
+}
 bb.forEach((v, i) => {
-    answer.push(dd.find(n => (
-        n == v
-    )))
+    if(dd.has(v)) answer.push(v);
 })
-answer = answer.filter(n => (n != undefined))
-console.log(answer.length + "\n" + answer.join("\n"));
+answer.sort();
+console.log(answer.length)
+console.log(answer.join('\n'));
 
 
-//시간초과...ㅠ
+// 시간초과...ㅠ
+// 왜 이건 통과인지 모르겠네...
