@@ -1,3 +1,4 @@
+// 2022-02-22
 function solution(number) {
     let arr = [];
     for (let i = 1; i <= number; i++) {
