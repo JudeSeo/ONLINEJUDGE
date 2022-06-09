@@ -18,3 +18,5 @@ input.forEach((v, index) => {
 console.log(answer.join("\n"));
 
 // 시간초과 나온다....
+
+-> // 자바로 풀었음
