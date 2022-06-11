@@ -1,4 +1,3 @@
-
 // 2022-06-11
 import java.io.*;
 import java.util.*;
@@ -12,28 +11,21 @@ public class BS5_peopleInOffice {
         StringBuilder sb = new StringBuilder();
         StringTokenizer st = new StringTokenizer(br.readLine());
         int num1 = Integer.parseInt(st.nextToken());
-        HashMap<String, String> peopleMap = new HashMap<>();
+        NavigableSet<String> peopleSet = new TreeSet<String>();
         for (int i = 0; i < num1; i++) {
             st = new StringTokenizer(br.readLine());
             String name = st.nextToken();
             String move = st.nextToken();
-            if (move.equals("enter")) {
-                peopleMap.put(name, move);
-            } else {
-                peopleMap.replace(name, move);
-            }
-        }
-        ArrayList<String> arr = new ArrayList<>();
-        for (String s : peopleMap.keySet()) {
-            if (peopleMap.get(s).equals("enter")) {
-                arr.add(s);
-            }
+            if (move.equals("enter"))
+                peopleSet.add(name);
+            else
+                peopleSet.remove(name);
         }
 
-        Collections.sort(arr, Collections.reverseOrder());
-        for (String s : arr) {
+        for (String s : peopleSet.descendingSet()) {
             sb.append(s + "\n");
         }
+
         bw.write(sb.toString());
         bw.flush();
         bw.close();
@@ -41,6 +33,5 @@ public class BS5_peopleInOffice {
     }
 }
 
-// set으로 풀었더니 런타임에러....
-// map으로 바꿨는데도 런타임에러...
-// 왜 런타임에러??
+// 맞았는데.... node.js로 돌려서 런타임에러 떴었네...
+// 거기다 클래스명도 Main으로 안했었다...
