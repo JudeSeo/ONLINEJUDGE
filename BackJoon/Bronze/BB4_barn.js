@@ -7,5 +7,4 @@ let height = input[1];
 let width = input[2];
 let square = input[3];
 let answer = parseInt(height / square) * parseInt(width / square)
-<<<<<<< HEAD
 console.log(answer > cow ? cow : answer);
