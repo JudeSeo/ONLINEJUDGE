@@ -6,5 +6,5 @@ let cow = input[0];
 let height = input[1];
 let width = input[2];
 let square = input[3];
-let answer = parseInt(height/square) * parseInt(width/square)
-console.log(answer>cow?cow:answer);
+let answer = parseInt(height / square) * parseInt(width / square)
+console.log(answer > cow ? cow : answer);
