@@ -1,7 +1,7 @@
 // 2022-02-03
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let up = parseInt(input[0].split(" ")[0]);
 let down = parseInt(input[0].split(" ")[1]);
 let dist = up - down

@@ -1,9 +1,9 @@
 // 2012-12-15
 function solution(participant, completion) {
-    var answer = '';
+    let answer = '';
     participant.sort();
     completion.sort();
-    for (var i = 0; i < participant.length; i++) {
+    for (let i = 0; i < participant.length; i++) {
         if (participant[i] != completion[i]) {
             answer = participant[i];
             break;

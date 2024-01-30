@@ -1,7 +1,7 @@
 // 2022-12-15
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0].split(" ").map(v => Number(v)).sort((a, b) => a - b);
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n')[0].split(" ").map(v => Number(v)).sort((a, b) => a - b);
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n')[0].split(" ").map(v => Number(v)).sort((a, b) => a - b);
 let x1 = Math.floor((input[0] - 1) / 4);
 let x2 = Math.floor((input[1] - 1) / 4);
 let y1 = (input[0] + 3) % 4;

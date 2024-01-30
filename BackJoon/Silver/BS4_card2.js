@@ -1,7 +1,7 @@
 // 2023-12-13
-var fs = require('fs');
+let fs = require('fs');
 // let input = Number(fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0]);
-var input = Number(fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0]);
+let input = Number(fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0]);
 const binArr = input.toString(2).split("");
 binArr.shift();
 let result = parseInt(binArr.join(""), 2);

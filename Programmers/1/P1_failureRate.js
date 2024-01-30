@@ -1,7 +1,7 @@
 // 2022-01-06
 function solution(N, stages) {
-    var answer = [];
-    var failLength = new Array(N).fill(0);
+    let answer = [];
+    let failLength = new Array(N).fill(0);
     stages.forEach(value => {
         failLength[value-1] = (failLength[value-1] || 0) + 1
     });

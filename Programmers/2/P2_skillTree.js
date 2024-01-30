@@ -1,6 +1,6 @@
 // 2022-01-11
 function solution(skill, skill_trees) {
-    var answer = 0;
+    let answer = 0;
     answer = skill_trees.filter(value =>
         skill.indexOf(value.split('').filter(v => skill.split('').includes(v)).join('')) === 0).length;
     console.log(answer);

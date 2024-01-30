@@ -1,5 +1,5 @@
 function solution(numbers) {
-    var answer = '';
+    let answer = '';
     numbers.sort((a, b) => {
         return (b.toString() + a) - (a.toString() + b)
     });

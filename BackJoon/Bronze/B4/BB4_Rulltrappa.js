@@ -1,7 +1,7 @@
 // 2022-07-18
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let stair = input[0].split(" ");
 let escal = input[1].split(" ");
 let people = input[2].split(" ");

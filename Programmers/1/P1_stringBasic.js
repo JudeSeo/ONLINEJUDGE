@@ -1,6 +1,6 @@
 // 2021-11-15
 function solution(s) {
-    var answer = false;
+    let answer = false;
 
     if(s.length == 4 || s.length == 6){
         if (!isNaN(s))

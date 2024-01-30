@@ -1,6 +1,6 @@
 // 2021-12-30
 function solution(dartResult) {
-    var answer = 0;
+    let answer = 0;
     for (let i = 0; i < dartResult.length; i++) {
         dartResult[i]
     }

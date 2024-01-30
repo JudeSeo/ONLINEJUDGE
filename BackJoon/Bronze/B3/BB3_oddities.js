@@ -1,7 +1,7 @@
 // 2022-09-05
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').map(v=>Number(v));
-var input = fs.readFileSync('¿¹Á¦.txt').toString().trim().split('\r\n').map(v => Number(v));
+let input = fs.readFileSync('ï¿½ï¿½ï¿½ï¿½.txt').toString().trim().split('\r\n').map(v => Number(v));
 let answer = [];
 input = input.slice(1);
 input.forEach(v => {

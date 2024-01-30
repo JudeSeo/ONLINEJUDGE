@@ -1,7 +1,7 @@
 // 2022-02-14
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let hour = parseInt(input[0].split(" ")[0]);
 let min = parseInt(input[0].split(" ")[1]);
 let now = min+parseInt(input[1]);

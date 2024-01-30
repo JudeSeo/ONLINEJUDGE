@@ -1,8 +1,8 @@
 function solution(n) {
-    var answer = 0;
-    var b=[];
-    var a = n.toString();
-    for(var i=0;i<a.length;i++){
+    let answer = 0;
+    let b=[];
+    let a = n.toString();
+    for(let i=0;i<a.length;i++){
         b.push(a.substr(i,1));
     }
     b.sort().reverse();

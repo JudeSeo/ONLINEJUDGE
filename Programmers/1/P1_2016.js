@@ -1,7 +1,7 @@
 // 2021-11-11
 function solution(a, b) {
-    var answer = '';
-    var week = {0:"SUN",
+    let answer = '';
+    let week = {0:"SUN",
                 1:"MON",
                 2:"TUE",
                 3:"WED",
@@ -9,8 +9,8 @@ function solution(a, b) {
                 5:"FRI",
                 6:"SAT"
                 };
-    var date = new Date(2016, a-1, b);
-    var date2 = date.getDay();
+    let date = new Date(2016, a-1, b);
+    let date2 = date.getDay();
     answer = week[date2];
     console.log(answer);
     return answer;

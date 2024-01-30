@@ -1,13 +1,13 @@
 // 2022-01-04
 function solution(answers) {
-    var answer = [];
-    var s1 = [1, 2, 3, 4, 5];
-    var s2 = [2, 1, 2, 3, 2, 4, 2, 5];
-    var s3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5];
-    var cnt1 = 0;
-    var cnt2 = 0;
-    var cnt3 = 0;
-    for (var i = 0; i < answers.length; i++) {
+    let answer = [];
+    let s1 = [1, 2, 3, 4, 5];
+    let s2 = [2, 1, 2, 3, 2, 4, 2, 5];
+    let s3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5];
+    let cnt1 = 0;
+    let cnt2 = 0;
+    let cnt3 = 0;
+    for (let i = 0; i < answers.length; i++) {
         if ((s1[i % s1.length]) == (answers[i % answers.length]))
             cnt1++
         if ((s2[i % s2.length]) == (answers[i % answers.length]))

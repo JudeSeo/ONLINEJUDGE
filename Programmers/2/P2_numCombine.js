@@ -1,6 +1,6 @@
 // 2022-01-17
 function solution(n) {
-    var answer = 1;
+    let answer = 1;
     for (let i = 1; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
             let sum = (i + j) * (j - i + 1)

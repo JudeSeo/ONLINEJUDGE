@@ -1,8 +1,8 @@
 // 2021-12-
 function solution(land) {
-    var answer = 0;
-    for (var i = 0; i < land.length; i++) {
-        for (var j = 0; j < 4; j++) {
+    let answer = 0;
+    for (let i = 0; i < land.length; i++) {
+        for (let j = 0; j < 4; j++) {
             
         }
     }

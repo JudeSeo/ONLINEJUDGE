@@ -1,7 +1,7 @@
 // 2023-08-07
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0].split("");
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n')[0].split("");
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n')[0].split("");
 const code = {
     a: 4,
     e: 3,

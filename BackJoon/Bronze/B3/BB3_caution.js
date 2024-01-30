@@ -1,7 +1,7 @@
 // 2023-01-30
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync("예제.txt").toString().trim().split('\r\n');
+let input = fs.readFileSync("예제.txt").toString().trim().split('\r\n');
 let [hour1, min1, sec1] = input[0].split(":").map(v=>Number(v));
 let [hour2, min2, sec2] = input[1].split(":").map(v=>Number(v));
 if(hour1 == hour2 && min1==min2&&sec1==sec2) {

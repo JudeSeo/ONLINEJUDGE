@@ -1,6 +1,6 @@
 // 2022-11-29
 function solution(left, right) {
-    var answer = 0;
+    let answer = 0;
     for (let i = left; i <= right; i++) {
         let temp = 0;
         for (let j = 1; j <= i; j++) {

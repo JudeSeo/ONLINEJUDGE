@@ -1,7 +1,7 @@
 // 2022-12-24
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
 let seven = input[0].split(" ").map(v => Number(v));
 input = input.slice(2);
 let answer = 1000 / seven[1] * seven[0]

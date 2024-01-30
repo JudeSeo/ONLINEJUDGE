@@ -1,7 +1,7 @@
 // 2021-12-28
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().split('\n');
-var input = fs.readFileSync('예제.txt').toString().split('\n');
+let input = fs.readFileSync('예제.txt').toString().split('\n');
 let alp = []
 for (let i = 97; i <= 122; i++) {
     alp.push(String.fromCharCode(i));

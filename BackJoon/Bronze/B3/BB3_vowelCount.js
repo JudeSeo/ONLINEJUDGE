@@ -1,7 +1,7 @@
 // 2023-03-08
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').slice(1);
-var input = fs.readFileSync("예제.txt").toString().trim().split('\r\n').slice(1);
+let input = fs.readFileSync("예제.txt").toString().trim().split('\r\n').slice(1);
 let answer = [];
 let vowel = ['a', 'e', 'i', 'o', 'u']
 input.forEach(v => {

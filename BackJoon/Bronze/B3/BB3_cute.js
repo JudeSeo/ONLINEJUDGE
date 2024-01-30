@@ -1,7 +1,7 @@
 // 2023-02-05
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').slice(1).map(v=>Number(v));
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n').slice(1).map(v => Number(v));
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n').slice(1).map(v => Number(v));
 let cute = input.filter(v => v == 1).length;
 let notCute = input.filter(v => v == 0).length;
 let answer = cute > notCute ? "\"Junhee is cute!" : "Junhee is not cute!"

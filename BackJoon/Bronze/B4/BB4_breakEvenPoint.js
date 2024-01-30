@@ -1,10 +1,10 @@
 // 2022-01-12
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
-var input = fs.readFileSync('예제.txt').toString().trim().split(' ');
-var first = Math.floor(input[0]);
-var n = 1;
-var benefit = Math.floor(input[2]) - Math.floor(input[1]);
+let input = fs.readFileSync('예제.txt').toString().trim().split(' ');
+let first = Math.floor(input[0]);
+let n = 1;
+let benefit = Math.floor(input[2]) - Math.floor(input[1]);
 if (benefit <= 0)
     n = -1;
 else

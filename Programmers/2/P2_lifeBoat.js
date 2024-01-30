@@ -1,11 +1,11 @@
 // 2022-01-04
 function solution(people, limit) {
-    var answer = 0;
-    var end = people.length - 1;
+    let answer = 0;
+    let end = people.length - 1;
     people.sort((a, b) => { return b - a });
-    for (var i = 0; i <= end; i++) {
+    for (let i = 0; i <= end; i++) {
         answer++;
-        for (var j = end; j > 0; j--) {
+        for (let j = end; j > 0; j--) {
             if (limit >= people[i] + people[j]) {
                 end--;
                 break;

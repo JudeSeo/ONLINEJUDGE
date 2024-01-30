@@ -1,7 +1,7 @@
 // 2022-12-02
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
 let master = input[0];
 let answer = new Set();
 answer.add(master)

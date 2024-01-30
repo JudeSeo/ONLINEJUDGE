@@ -1,7 +1,7 @@
 // 2022-07-18
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let standard = input[0].split(" ").map(v=>Number(v));
 let score = input[1].split(" ").map(v=>Number(v));
 let answer = "E"

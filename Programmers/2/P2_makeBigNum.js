@@ -1,11 +1,11 @@
 // 2022-01-04
 function solution(number, k) {
-    var answer = '';
-    var max = 0;
-    var index = 0;
-    var length = number.length;
-    for (var i = 0; i < length - k; i++) {
-        for (var j = index; j <= k + i; j++) {
+    let answer = '';
+    let max = 0;
+    let index = 0;
+    let length = number.length;
+    for (let i = 0; i < length - k; i++) {
+        for (let j = index; j <= k + i; j++) {
             if (number.charAt(j) == '9') {
                 max = number.charAt(j) - '0';
                 index = j + 1;

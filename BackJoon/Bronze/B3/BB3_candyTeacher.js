@@ -1,7 +1,7 @@
 // 2022-12-19
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').slice(2).map(v=>BigInt(v));
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n').slice(2).map(v => BigInt(v));
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n').slice(2).map(v => BigInt(v));
 let answer = [];
 while (input.length > 0) {
     let num = input.splice(0, 1)[0]

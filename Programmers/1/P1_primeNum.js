@@ -1,16 +1,16 @@
 // 2022-01-03
 function solution(n) {
-    var answer = 0;
-    var primeChk = [0, 0];
-    for (var i = 2; i <= n; i++) {
+    let answer = 0;
+    let primeChk = [0, 0];
+    for (let i = 2; i <= n; i++) {
         if (i % 2 == 0)
             primeChk[i] = 0;
         else
             primeChk[i] = i;
     }
     primeChk[2] = 2;
-    for (var i = 3; i <= n; i++) {
-        for (var j = (i + i); j <= n; j += i) {
+    for (let i = 3; i <= n; i++) {
+        for (let j = (i + i); j <= n; j += i) {
             primeChk[j] = 0
         }
     }

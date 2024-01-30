@@ -1,14 +1,14 @@
 // 2022-01-14 -> 2022-01-15
 function solution(id_list, report, k) {
-    var answer = new Array(id_list.length).fill(0);
-    var temp = {}
-    var set = new Set(report);
+    let answer = new Array(id_list.length).fill(0);
+    let temp = {}
+    let set = new Set(report);
     set.forEach(value => {
-        var reported = value.split(" ")[1];
+        let reported = value.split(" ")[1];
         temp[reported] = (temp[reported] || 0) + 1
     });
     set.forEach(item => {
-        var tmp1 = item.split(" ")[1]
+        let tmp1 = item.split(" ")[1]
         if (temp[tmp1] >= k && item.includes(tmp1)) {
             answer[id_list.indexOf(item.split(" ")[0])] += 1;
         }

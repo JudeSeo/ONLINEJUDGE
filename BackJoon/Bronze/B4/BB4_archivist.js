@@ -1,7 +1,7 @@
 // 2022-07-21
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').map(v=>Number(v));
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n').map(v => Number(v));
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n').map(v => Number(v));
 const winner = {
     1995: "ITMO",
     1996: "SPbSU",

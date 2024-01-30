@@ -1,7 +1,7 @@
 // 2022-01-02
 function solution(n, lost, reserve) {
-    var answer = 0;
-    var arr=[]
+    let answer = 0;
+    let arr=[]
     answer = n - lost.length;
     lost.sort();
     reserve.sort();

@@ -1,9 +1,9 @@
 // 2022-01-05
 function solution(x) {
-    var answer = true;
-    var num = "" + x;
-    var remain = 0;
-    for (var i = 0; i < num.length; i++) {
+    let answer = true;
+    let num = "" + x;
+    let remain = 0;
+    for (let i = 0; i < num.length; i++) {
         remain += parseInt(num[i]);
     }
     if (x % remain != 0)

@@ -1,9 +1,9 @@
 // 2022-05-28
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').slice(1.map(v=>Number(v)));
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n').slice(1).map(v => Number(v));
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n').slice(1).map(v => Number(v));
 // input.sort((a, b) => b - a)
-var answer = [];
+let answer = [];
 let sum = 0;
 for (let i = 0; i < input.length; i++) {
     let temp = input.map(v => v * (i + 1));

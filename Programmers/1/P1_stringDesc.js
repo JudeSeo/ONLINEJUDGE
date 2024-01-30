@@ -1,8 +1,8 @@
 // 2021-11-19
 function solution(s) {
-    var answer = '';
-    var a=[];
-    for(var i=0;i<s.length;i++){
+    let answer = '';
+    let a=[];
+    for(let i=0;i<s.length;i++){
         a.push(s.substr(i,1));
     }
     a.sort().reverse();

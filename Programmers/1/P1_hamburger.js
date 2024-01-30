@@ -1,6 +1,6 @@
 // 2022-11-28
 function solution(ingredient) {
-    var answer = 0;
+    let answer = 0;
     let stack = [];
     for (let i = 0; i < ingredient.length; i++) {
         stack.push(ingredient[i]);

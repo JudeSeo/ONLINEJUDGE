@@ -1,7 +1,7 @@
 // 2022-07-06
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let answer = "Error";
 let a = Number(input[0]);
 let b = Number(input[1]);

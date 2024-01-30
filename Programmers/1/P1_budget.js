@@ -1,6 +1,6 @@
 // 2022-04-04
 function solution(d, budget) {
-    var answer = 0;
+    let answer = 0;
     d.sort((a, b) => (a - b));
     d.forEach((v, i) => {
         if (budget > parseInt(v)) {

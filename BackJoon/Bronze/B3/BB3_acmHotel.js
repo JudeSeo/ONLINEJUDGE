@@ -1,7 +1,7 @@
 // 2022-02-07
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 for (let i = 1; i <= input[0]; i++) {
     let problem = input[i].split(" ");
     let floor = parseInt(problem[0]);

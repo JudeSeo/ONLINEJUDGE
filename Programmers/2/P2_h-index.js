@@ -1,11 +1,11 @@
 // 2021-12-20
 function solution(citations) {
-    var answer = 0;
+    let answer = 0;
     citations.sort(function (a, b) { return a - b });
     console.log(citations);
-    for (var i = 0; i <= citations[citations.length - 1]; i++) {
-        var cnt = 0;
-        var mcnt = 0
+    for (let i = 0; i <= citations[citations.length - 1]; i++) {
+        let cnt = 0;
+        let mcnt = 0
         citations.forEach((value) => {
             if (value >= i)
                 cnt++;
@@ -14,7 +14,7 @@ function solution(citations) {
             answer = i;
             break;
         } else if (cnt > i) {
-            for (var j = 0; j < i; j++) {
+            for (let j = 0; j < i; j++) {
                 if (citations[j] < i) {
                     answer = i;
                     break;

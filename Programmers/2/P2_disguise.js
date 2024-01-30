@@ -1,17 +1,17 @@
 // 2021-12-26
 function solution(clothes) {
-    var answer = 0;
-    var set = new Set();
-    for (var i = 0; i < clothes.length; i++) {
+    let answer = 0;
+    let set = new Set();
+    for (let i = 0; i < clothes.length; i++) {
         set.add(clothes[i][1])
     }
     if (set.size == 1) {
         answer = clothes.length;
     } else {
-        var temp = [];
-        for (var j = 0; j < set.size; j++) {
+        let temp = [];
+        for (let j = 0; j < set.size; j++) {
             temp[j] = 0;
-            for (var i = 0; i < clothes.length; i++) {
+            for (let i = 0; i < clothes.length; i++) {
                 if (set.has(clothes[i][1])) {
                     temp[j] = temp[j] + 1;
                     console.log(temp)

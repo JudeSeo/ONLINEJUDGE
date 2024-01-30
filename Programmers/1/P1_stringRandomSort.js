@@ -1,6 +1,6 @@
 // 2021-12-16 -> 2021-12-29
 function solution(strings, n) {
-    var answer = [];
+    let answer = [];
     let temp = ""
     strings.sort((a, b) => {
         if (a[n] === b[n])

@@ -1,7 +1,7 @@
 // 2022-01-28
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString();
-var input = fs.readFileSync('예제.txt').toString();
+let input = fs.readFileSync('예제.txt').toString();
 let length = input.length;
 let num = parseInt(input);
 let answer = 0;

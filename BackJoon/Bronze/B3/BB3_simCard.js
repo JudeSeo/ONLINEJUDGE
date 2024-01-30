@@ -1,7 +1,7 @@
 // 2022-08-31
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let a = [30,40];
 let b = [35,30];
 let c = [40,20];

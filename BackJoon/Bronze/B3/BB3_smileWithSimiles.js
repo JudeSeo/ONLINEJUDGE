@@ -1,7 +1,7 @@
 // 2023-08-31
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
 let answer = [];
 let [adj, noun, ...words] = input;
 let ad = words.splice(0, adj);

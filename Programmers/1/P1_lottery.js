@@ -1,11 +1,11 @@
 // 2021-12-27
 function solution(lottos, win_nums) {
-    var answer = [];
-    var temp = lottos.filter((element) => 0 == element).length;
-    var temp2 = lottos.filter(element => win_nums.includes(element)).length
-    var max = 7 - temp - temp2 
+    let answer = [];
+    let temp = lottos.filter((element) => 0 == element).length;
+    let temp2 = lottos.filter(element => win_nums.includes(element)).length
+    let max = 7 - temp - temp2
     max = max < 1 ? 1 : max > 6 ? 6 : max
-    var min = (7 - temp2) > 6 ? 6 : 7 - temp2;
+    let min = (7 - temp2) > 6 ? 6 : 7 - temp2;
 
     answer.push(max);
     answer.push(min);

@@ -1,8 +1,8 @@
 // 2021-11-12
 function solution(phone_number) {
-    var answer = '';
-    var leng = phone_number.length;
-    for(var i=4;i<leng;i++)
+    let answer = '';
+    let leng = phone_number.length;
+    for(let i=4;i<leng;i++)
         answer += "*";
     answer += phone_number.substr(leng-4)
     console.log(answer);

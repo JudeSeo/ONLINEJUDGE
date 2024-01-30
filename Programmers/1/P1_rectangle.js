@@ -1,8 +1,8 @@
 // 2021-12-14
 function solution(sizes) {
-    var answer = 0;
-    var small, big, width = 0 , height = 0;
-    for (var i = 0; i < sizes.length; i++) {
+    let answer = 0;
+    let small, big, width = 0 , height = 0;
+    for (let i = 0; i < sizes.length; i++) {
         small = sizes[i][0] > sizes[i][1] ? sizes[i][1] : sizes[i][0]
         big = sizes[i][0] < sizes[i][1] ? sizes[i][1] : sizes[i][0]
         sizes[i][0] = small;

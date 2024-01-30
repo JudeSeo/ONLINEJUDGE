@@ -1,7 +1,7 @@
 // 2022-07-18
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0].split(" ");
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].split(" ");
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].split(" ");
 let day = input[0] - 11
 let hour = input[1] - 11
 let min = input[2] - 11;

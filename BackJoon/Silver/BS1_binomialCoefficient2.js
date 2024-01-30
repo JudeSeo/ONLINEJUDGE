@@ -1,11 +1,11 @@
 // 2022-05-09
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0].split(" ");
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].split(" ");
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].split(" ");
 let n = Number(input[0]);
 let k = Number(input[1]);
 let sum = new Array((n+1));
-for (var i = 0; i <= n; i++) {
+for (let i = 0; i <= n; i++) {
     sum[i] = new Array(n+1);
     sum[i].fill(0);
 }

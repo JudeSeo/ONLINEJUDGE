@@ -1,10 +1,10 @@
 // 2022-01-07
-var fs = require('fs');
+let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-// var input = fs.readFileSync('예제.txt').toString().trim().split('\n');
+// let input = fs.readFileSync('예제.txt').toString().trim().split('\n');
 
-var length = input.splice(0, 1);
-var answer = []
+let length = input.splice(0, 1);
+let answer = []
 input.sort((a, b) => {
     return a - b;
 })

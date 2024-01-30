@@ -1,7 +1,7 @@
 // 2023-11-05
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
 let [diver, surviver] = input.splice(0, 1)[0].split(" ");
 let answer = [];
 if (diver == surviver) answer.push("*");

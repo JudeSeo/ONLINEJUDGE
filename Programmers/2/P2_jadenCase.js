@@ -1,10 +1,10 @@
 // 2021-12-22
 function solution(s) {
-    var answer = '';
-    var words = s.split(" ");
+    let answer = '';
+    let words = s.split(" ");
     words.forEach(value => {
-        var firstChar = value.charAt(0);
-        var firstCharUpper = firstChar.toUpperCase();
+        let firstChar = value.charAt(0);
+        let firstCharUpper = firstChar.toUpperCase();
         answer = answer + " " + firstCharUpper + value.slice(1, value.length).toLowerCase();
     });
     answer = answer.replace(" ", "");

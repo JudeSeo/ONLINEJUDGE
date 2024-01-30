@@ -1,7 +1,7 @@
 // 2021-11-13
 function solution(s) {
-    var answer = 0;
-    var num1 = {
+    let answer = 0;
+    let num1 = {
         "one":1,
         "two":2,
         "three":3,
@@ -13,7 +13,7 @@ function solution(s) {
         "nine":9,
         "zero":0
     }
-    var num2 = {
+    let num2 = {
         1:"one",
         2:"two",
         3:"three",
@@ -25,7 +25,7 @@ function solution(s) {
         9:"nine",
         0:"zero"
     }
-    for(var i=0;i<50;i++){
+    for(let i=0;i<50;i++){
         while(s.indexOf(num2[i]) != -1){
             if(s.indexOf(num2[i]) == -1)
                 break;

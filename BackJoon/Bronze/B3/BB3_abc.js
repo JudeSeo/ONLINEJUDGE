@@ -1,7 +1,7 @@
 // 2023-01-17
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
+let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
 let answer = [];
 let abc = input[1].split("");
 let num = input[0].split(" ").map(v => Number(v)).sort((a, b) => a - b);

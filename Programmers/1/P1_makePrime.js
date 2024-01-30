@@ -1,18 +1,18 @@
 // 2021-12-17
 function solution(nums) {
-    var answer = 0;
-    var arr = [];
+    let answer = 0;
+    let arr = [];
     nums.sort();
-    for (var i = 0; i < nums.length - 2; i++) {
-        for (var j = i + 1; j < nums.length - 1; j++) {
-            for (var k = j + 1; k < nums.length; k++) {
+    for (let i = 0; i < nums.length - 2; i++) {
+        for (let j = i + 1; j < nums.length - 1; j++) {
+            for (let k = j + 1; k < nums.length; k++) {
                 arr.push(nums[i] + nums[j] + nums[k]);
             }
         }
     }
     arr.forEach(function (value, index) {
-        var cnt = 0;
-        for (var i = 2; i < value; i++) {
+        let cnt = 0;
+        for (let i = 2; i < value; i++) {
             if (value % i == 0)
                 cnt++
         }

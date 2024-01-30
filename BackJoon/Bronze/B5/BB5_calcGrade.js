@@ -1,6 +1,6 @@
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0];
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0];
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0];
 let arr = {
     "A+": 4.3, "A0": 4.0, "A-": 3.7,
     "B+": 3.3, "B0": 3.0, "B-": 2.7,

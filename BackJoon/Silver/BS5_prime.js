@@ -1,11 +1,11 @@
 // 2022-05-21
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let from = Number(input[0]);
 let to = Number(input[1]);
-var answer = [];
-var primeChk = [0, 0];
+let answer = [];
+let primeChk = [0, 0];
 for (let i = from; i <= to; i++) {
     if (i == 2)
         primeChk[2] = 2;

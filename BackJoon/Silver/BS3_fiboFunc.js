@@ -1,7 +1,7 @@
 // 2022-04-06
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 input = input.slice(1);
 let max = Math.max(...input);
 let answer = [0, 1];

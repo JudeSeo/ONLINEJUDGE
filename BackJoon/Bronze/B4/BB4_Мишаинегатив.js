@@ -1,7 +1,7 @@
 // 2022-07-14
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let line = Number(input[0].split(" ")[0]);
 let basic = input.slice(1, line + 1);
 let compare = input.slice(line + 2);

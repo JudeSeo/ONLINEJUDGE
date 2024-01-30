@@ -1,9 +1,9 @@
 // 2022-01-08
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\n');
+let input = fs.readFileSync('예제.txt').toString().trim().split('\n');
 input = input.splice(1, input.length - 1)
-var nums = input[0];
+let nums = input[0];
 input = nums.split(' ')
 input.sort((a, b) => {
     return b - a

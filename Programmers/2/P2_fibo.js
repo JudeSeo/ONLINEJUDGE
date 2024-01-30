@@ -1,8 +1,8 @@
 // 2021-12-23
 function solution(n) {
-    var answer = 0;
-    var arr = [0, 1];
-    for (var i = 1; i < n; i++) {
+    let answer = 0;
+    let arr = [0, 1];
+    for (let i = 1; i < n; i++) {
         arr[i + 1] = (arr[i - 1] + arr[i]) % 1234567;
     }
     answer = arr[arr.length - 1]

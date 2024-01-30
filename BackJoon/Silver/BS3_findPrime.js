@@ -1,9 +1,9 @@
 // 2022-04-26
-var fs = require('fs');
+let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0].split(" ").map(v => Number(v));
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].split(" ").map(v => Number(v));
-var answer = [];
-var primeChk = [0, 0, 2, 3];
+let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].split(" ").map(v => Number(v));
+let answer = [];
+let primeChk = [0, 0, 2, 3];
 for (let i = 2; i <= input[1]; i++) {
     for (let j = 2; j <= Math.sqrt(i); j++) {
         if (i != j && i % j == 0) {

@@ -1,13 +1,13 @@
 // 2021-11-17
 function solution(arr) {
-    var answer = [];
-    var a = arr.slice();
-    var b = "";
+    let answer = [];
+    let a = arr.slice();
+    let b = "";
     if(arr.length == 1)
         answer[0] = -1;
     else{
-        for(var i=0;i<arr.length;i++){
-            for(var j=i+1;j<arr.length;j++){
+        for(let i=0;i<arr.length;i++){
+            for(let j=i+1;j<arr.length;j++){
                 if(a[i]>a[j]){
                     b=a[i];
                     a[i]=a[j];

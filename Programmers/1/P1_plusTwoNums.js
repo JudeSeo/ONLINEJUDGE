@@ -1,9 +1,9 @@
 // 2021-11-16
 function solution(numbers) {
-    var answer = [];
-    var setAnswer = new Set();
-    for(var i=0;i<numbers.length;i++){
-        for(var j=i+1;j<numbers.length;j++){
+    let answer = [];
+    let setAnswer = new Set();
+    for(let i=0;i<numbers.length;i++){
+        for(let j=i+1;j<numbers.length;j++){
             setAnswer.add(numbers[i]+numbers[j]);
         }
     }
