@@ -1,7 +1,7 @@
 // 2024-02-13
-var fs = require('fs');
-// let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-var input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
+let fs = require('fs');
+// let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+let input = fs.readFileSync('예제.txt').toString().split('\r\n');
 let str = input[0].split("");
 let answer = [];
 let password = input[1].split("").map(v => v.charCodeAt(0) - 96);
