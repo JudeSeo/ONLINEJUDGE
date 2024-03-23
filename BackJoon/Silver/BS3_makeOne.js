@@ -1,24 +1,12 @@
-// 2022-05-01
+// 2024-03-23
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n')[0];
-let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0];
-input = parseInt(input);
+let input = fs.readFileSync("../../예제.txt").toString().trim().split('\r\n')[0];
 let answer = 0;
-while (input > 1) {
-    if (input % 3 == 0) {
-        input /= 3;
-        answer++;
-    } else if (input % 2 == 0) {
-        input /= 2;
-        answer++;
-    } else if (input % 3 == 1) {
-        input -= 1;
-        answer++;
-    } else if (input % 2 == 1) {
-        input -= 1;
-        answer++;
-    }
+let dp = new Array(1000000).fill(0)
+for (let i = 2; i <= input; i++) {
+    dp[i] = dp[i - 1] + 1;
+    if (i % 2 == 0) dp[i] = Math.min(dp[i], dp[i / 2] + 1);
+    if (i % 3 == 0) dp[i] = Math.min(dp[i], dp[i / 3] + 1);
 }
-console.log(answer);
-
-// dp로 풀어야하는듯
+console.log(dp[input]);
