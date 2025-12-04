@@ -12,7 +12,7 @@ let index = 0;
 while (true) {
     index += str.indexOf(word);
     if (str.indexOf(word) > 0) {
-        answer.push(index + 1 +(cnt * length));
+        answer.push(index + 1 + (cnt * length));
         str = str.substring(str.indexOf(word) + length);
         cnt++;
     } else

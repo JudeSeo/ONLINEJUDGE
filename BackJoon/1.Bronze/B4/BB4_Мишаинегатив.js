@@ -10,7 +10,7 @@ basic.forEach((v, i) => {
     let temp = v.split("")
     let comp = compare[i].split("")
     temp.forEach((value, index) => {
-        if(value==comp[index])
+        if (value == comp[index])
             answer++;
     })
 })

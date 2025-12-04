@@ -11,9 +11,9 @@ input.forEach(v => {
         for (let i = temp[1] - 1; i < temp[2]; i++) {
             sum += n[i];
         }
-        let tmp = n[temp[1]-1];
-        n[temp[1]-1] = n[temp[2]-1];
-        n[temp[2]-1] = tmp
+        let tmp = n[temp[1] - 1];
+        n[temp[1] - 1] = n[temp[2] - 1];
+        n[temp[2] - 1] = tmp
         answer.push(sum.toString());
     } else {
         let ab = 0n;

@@ -3,12 +3,12 @@ let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 input = input.slice(1)[0].split(" ");
-let temp = Array.from(new Set(input)).sort((a, b) => (a-b));
+let temp = Array.from(new Set(input)).sort((a, b) => (a - b));
 let answer = [];
 let object = {};
 
-temp.forEach((v, i) => (object[v]=i));
-for(let i=0;i<input.length;i++)
+temp.forEach((v, i) => (object[v] = i));
+for (let i = 0; i < input.length; i++)
     answer.push(object[input[i]]);
 
 // input.forEach((value, index)=>{

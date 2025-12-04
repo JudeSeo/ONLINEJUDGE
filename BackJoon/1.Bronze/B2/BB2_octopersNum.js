@@ -19,7 +19,7 @@ input.forEach(v => {
     let temp = v.split("").map(val => num[val]);
     let sum = 0;
     temp.forEach((val, index) => {
-        sum += (8 ** (temp.length - index-1) * val);
+        sum += (8 ** (temp.length - index - 1) * val);
     })
     answer.push(sum);
 })

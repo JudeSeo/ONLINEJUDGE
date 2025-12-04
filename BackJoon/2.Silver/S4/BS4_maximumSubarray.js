@@ -9,7 +9,7 @@ while (input.length > 0) {
     for (let i = 0; i < temp.length; i++) {
         arr.push(temp[i]);
         for (let j = i + 1; j < temp.length; j++) {
-            arr.push(arr[arr.length - 1]+ temp[j]);
+            arr.push(arr[arr.length - 1] + temp[j]);
         }
     }
     answer.push(Math.max(...arr));

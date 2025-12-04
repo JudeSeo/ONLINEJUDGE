@@ -6,7 +6,7 @@ let answer = [];
 input = input.slice(1);
 input.forEach(v => {
     let [p, c] = v.split(" ").map(v => Number(v));
-    let o =p/((c/100)+1)
+    let o = p / ((c / 100) + 1)
     answer.push(o)
 })
 console.log(answer.join("\n"));

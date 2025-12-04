@@ -4,7 +4,7 @@ let fs = require('fs');
 let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 input = input.slice(1);
 input.sort((a, b) => {
-    if(a.split(" ")[0] != b.split(" ")[0]){
+    if (a.split(" ")[0] != b.split(" ")[0]) {
         return a.split(" ")[0] - b.split(" ")[0]
     } else {
         return a.split(" ")[1] - b.split(" ")[1]

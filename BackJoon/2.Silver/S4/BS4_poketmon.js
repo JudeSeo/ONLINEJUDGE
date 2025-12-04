@@ -5,7 +5,7 @@ let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let answer = [];
 let nums = Number(input[0].split(" ")[0]) + 1;
 let poketmon = input.slice(1, nums);
-let poketmonMap = new Map(poketmon.map((v, i)=>[v, i+1]));
+let poketmonMap = new Map(poketmon.map((v, i) => [v, i + 1]));
 let prob = input.slice(nums)
 prob.forEach((v, i) => {
     if (poketmon[v - 1] != undefined)

@@ -56,5 +56,5 @@ if (v.length != 13) {
             if (val != (i + 1)) answer += (i + 1);
     })
 }
-if(answer.length == 2) answer += "13"
+if (answer.length == 2) answer += "13"
 console.log(answer);

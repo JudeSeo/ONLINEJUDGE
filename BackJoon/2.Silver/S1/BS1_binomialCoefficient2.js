@@ -4,9 +4,9 @@ let fs = require('fs');
 let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].split(" ");
 let n = Number(input[0]);
 let k = Number(input[1]);
-let sum = new Array((n+1));
+let sum = new Array((n + 1));
 for (let i = 0; i <= n; i++) {
-    sum[i] = new Array(n+1);
+    sum[i] = new Array(n + 1);
     sum[i].fill(0);
 }
 

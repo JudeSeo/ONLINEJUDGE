@@ -1,6 +1,7 @@
 // 2022-06-10
+
 import java.io.*;
-import java.util.*;
+import java.util.StringTokenizer;
 
 public class BS5_SelectionSum {
     public static void main(String[] args) throws IOException {
@@ -23,7 +24,7 @@ public class BS5_SelectionSum {
             st = new StringTokenizer(br.readLine());
             int from = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
-            sb.append(numSet[to+1] - numSet[from] + "\n");
+            sb.append(numSet[to + 1] - numSet[from] + "\n");
         }
         bw.write(sb.toString());
         bw.flush();

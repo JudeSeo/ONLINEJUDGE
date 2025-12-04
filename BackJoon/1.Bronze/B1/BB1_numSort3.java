@@ -1,6 +1,6 @@
 package BackJoon.Bronze;
+
 import java.io.*;
-import java.util.*;
 
 public class BB1_numSort3 {
     public static void main(String[] args) throws IOException {

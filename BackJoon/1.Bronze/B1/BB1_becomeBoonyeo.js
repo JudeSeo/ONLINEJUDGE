@@ -15,7 +15,7 @@ for (let i = 1; i < 15; i++) {
     answer.push(temp);
 }
 for (let i = 0; i < testNum; i++) {
-    let floor = input[i*2]
-    let ho = input[i*2+1]-1;
+    let floor = input[i * 2]
+    let ho = input[i * 2 + 1] - 1;
     console.log(answer[floor][ho]);
 }

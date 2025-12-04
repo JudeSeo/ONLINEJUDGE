@@ -8,8 +8,8 @@ if (min < 0) {
     min += 60
     hour -= 1;
 }
-if(hour < 0){
-    hour+= 24;
+if (hour < 0) {
+    hour += 24;
 }
 let time = hour * 60 + min
 let answer = [time, parseInt(time / 30)];

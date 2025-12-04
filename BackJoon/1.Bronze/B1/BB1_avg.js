@@ -14,6 +14,7 @@ let sum = 0;
 for (let i = 0; i < length; i++) {
     newScore.push(input[i] / max * 100);
     sum += newScore[i];
-};
+}
+;
 
 console.log(parseFloat(sum / length))

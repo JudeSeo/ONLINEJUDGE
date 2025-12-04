@@ -2,22 +2,22 @@
 let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n');
-let answer=[];
-input.forEach(v=>{
+let answer = [];
+input.forEach(v => {
     let temp = v.split("")
-    temp.forEach((val, i)=>{
-        switch (val){
+    temp.forEach((val, i) => {
+        switch (val) {
             case 'i':
-                temp[i]='e'
+                temp[i] = 'e'
                 break;
             case 'e':
-                temp[i]='i'
+                temp[i] = 'i'
                 break;
             case 'I':
-                temp[i]='E'
+                temp[i] = 'E'
                 break;
             case 'E':
-                temp[i]='I'
+                temp[i] = 'I'
                 break;
         }
     })

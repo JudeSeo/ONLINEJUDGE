@@ -14,8 +14,8 @@ input.forEach(v => {
 arr.sort((a, b) => b - a)
 let answer = [];
 let satis = 0
-arr.forEach(v=>{
-    satis = Math.floor(satis/2)+v;
+arr.forEach(v => {
+    satis = Math.floor(satis / 2) + v;
     answer.push(satis);
 })
 console.log(answer.length);

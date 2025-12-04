@@ -6,4 +6,4 @@ let minA = Number(input[0].replaceAll("6", "5"));
 let minB = Number(input[1].replaceAll("6", "5"));
 let maxA = Number(input[0].replaceAll("5", "6"));
 let maxB = Number(input[1].replaceAll("5", "6"));
-console.log(`${minA +minB} ${maxA + maxB}`);
+console.log(`${minA + minB} ${maxA + maxB}`);

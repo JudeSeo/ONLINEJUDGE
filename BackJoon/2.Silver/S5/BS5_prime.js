@@ -16,7 +16,8 @@ for (let i = from; i <= to; i++) {
         } else
             primeChk[i] = i;
     }
-};
+}
+;
 primeChk.forEach(value => {
     if (value > 0)
         answer.push(value);

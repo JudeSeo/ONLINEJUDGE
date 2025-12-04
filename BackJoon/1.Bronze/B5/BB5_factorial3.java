@@ -1,6 +1,7 @@
 // 2023-05-16
-import java.util.Scanner;
+
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class BB5_factorial3 {
 
@@ -17,6 +18,7 @@ public class BB5_factorial3 {
     private static BigInteger factorial(int n) {
         return sub_fact(1, n);
     }
+
     private static BigInteger sub_fact(int a, int b) {
         // 간단한 factorial 함수들은 그냥 원래 방식대로 실행
         // SIMPLE_THRESHOLD 값 자체는 크게 영향을 주지 않는 것 같다

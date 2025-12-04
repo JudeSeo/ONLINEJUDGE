@@ -4,7 +4,7 @@ let fs = require('fs');
 let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let answer = [];
 input = input.slice(1)
-input.forEach(v=>{
+input.forEach(v => {
     let temp = v.split("");
     temp.reverse();
     answer.push(temp.join(""));

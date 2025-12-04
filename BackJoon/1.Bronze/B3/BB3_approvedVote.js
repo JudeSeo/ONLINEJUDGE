@@ -4,7 +4,7 @@ let fs = require('fs');
 let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n')[1].split(" ").map(v => Number(v));
 let answer = "";
 let vote = 0;
-if (input.filter(v => v == 0).length >= (input.length/2)) answer = "INVALID";
+if (input.filter(v => v == 0).length >= (input.length / 2)) answer = "INVALID";
 else {
     input.forEach(v => {
         vote += v;

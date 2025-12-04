@@ -8,9 +8,9 @@ let sites = []
 input = input.slice(1);
 let finds = input.slice(siteNum);
 
-input.slice(0, siteNum).map(v=>{
+input.slice(0, siteNum).map(v => {
     let [ip, pw] = v.split(" ");
-    sites[ip]=pw;
+    sites[ip] = pw;
 })
 finds.map(v => {
     answer.push(sites[v])

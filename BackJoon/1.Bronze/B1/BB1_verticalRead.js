@@ -5,7 +5,7 @@ let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let answer = [];
 input.forEach((v, index) => {
     for (let i = 0; i < v.length; i++) {
-        answer[5*i+index] = v[i];
+        answer[5 * i + index] = v[i];
     }
 })
 

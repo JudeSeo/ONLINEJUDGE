@@ -1,5 +1,8 @@
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.StringTokenizer;
 
 public class BS3_registCourses {
     public static void main(String[] args) throws IOException {

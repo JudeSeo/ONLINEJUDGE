@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 let input = [];
 rl.on("line", function (line) {
-    input=line
+    input = line
     rl.close();
 }).on("close", function () {
     solution(input);

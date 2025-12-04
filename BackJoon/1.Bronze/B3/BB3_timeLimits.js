@@ -5,5 +5,5 @@ let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let s = Number(input[0].split(" ")[1]);
 input = input.slice(1)[0].split(" ").map(v => Number(v));
 let max = Math.max(...input);
-let answer = Math.ceil(max*s/1000)
+let answer = Math.ceil(max * s / 1000)
 console.log(answer);

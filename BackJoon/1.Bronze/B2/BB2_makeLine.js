@@ -5,7 +5,7 @@ var input = fs.readFileSync("예제2.txt").toString().trim().split('\r\n').slice
 let answer = [];
 input.forEach((v, i) => {
     let arr = answer.splice(v);
-    answer.push(i+1);
+    answer.push(i + 1);
     answer.push(...arr);
 })
 console.log(answer.reverse().join(" "));

@@ -12,7 +12,7 @@ while (flag) {
         arr.push(input.indexOf(ucpc[i]));
         input = input.slice((input.indexOf(ucpc[i])) + 1)
         i++;
-    } else{
+    } else {
         flag = false;
         break;
     }

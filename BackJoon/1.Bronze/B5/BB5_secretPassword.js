@@ -4,8 +4,8 @@ let fs = require('fs');
 let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 input = input.slice(1);
 let answer = [];
-input.forEach(v=>{
-    if(v.length >=6 && v.length <=9)
+input.forEach(v => {
+    if (v.length >= 6 && v.length <= 9)
         answer.push("yes");
     else
         answer.push("no");

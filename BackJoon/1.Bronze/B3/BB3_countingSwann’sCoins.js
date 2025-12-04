@@ -7,6 +7,6 @@ for (let i = 1; i <= input; i++) {
     if (i % 3 == 0 && i % 5 == 0) answer.push("DeadMan\n");
     else if (i % 3 == 0) answer.push("Dead\n");
     else if (i % 5 == 0) answer.push("Man\n");
-    else answer.push(i+" ");
+    else answer.push(i + " ");
 }
 console.log(answer.join(""));

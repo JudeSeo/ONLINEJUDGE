@@ -1,13 +1,13 @@
 // 2022-11-26
 const readline = require("readline");
 const rl = readline.createInterface({
-    input : process.stdin,
-    output : process.stdout
+    input: process.stdin,
+    output: process.stdout
 });
-let input =[];
-rl.on("line", function(line){
+let input = [];
+rl.on("line", function (line) {
     input.push(line);
-}).on("close", function(){
+}).on("close", function () {
     solution(input);
     process.exit();
 });

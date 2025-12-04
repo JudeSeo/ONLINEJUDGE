@@ -9,6 +9,6 @@ while (intern > std) {
     answer--;
     std += 3
 }
-if(answer<0)
+if (answer < 0)
     answer = 0;
 console.log(answer);

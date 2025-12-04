@@ -5,14 +5,14 @@ let input = fs.readFileSync('예제.txt').toString().trim().split('\n');
 input = input.slice(1)
 let set = new Set(input);
 let arr = new Array()
-set.forEach(v=>{
+set.forEach(v => {
     arr.push(v)
 })
 arr.sort();
-arr.sort((a, b)=>{
+arr.sort((a, b) => {
     let len = a.length - b.length;
-    if(len == 0)
-        len = a-b
+    if (len == 0)
+        len = a - b
     return len
 })
 arr = arr.join('\n')

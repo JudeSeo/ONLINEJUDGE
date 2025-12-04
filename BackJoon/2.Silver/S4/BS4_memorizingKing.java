@@ -1,6 +1,9 @@
 // 2022-06-10
+
 import java.io.*;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.StringTokenizer;
 
 public class BS4_memorizingKing {
     public static void main(String[] args) throws IOException {

@@ -12,25 +12,19 @@ input.forEach((v, i) => {
     if (dis != 0) {
         if (dis > pdis) {
             answer.push(0);
-        }
-        else if (dis == pdis) {
+        } else if (dis == pdis) {
             answer.push(1);
-        }
-        else if (mdis == dis) {
+        } else if (mdis == dis) {
             answer.push(1);
-        }
-        else if (mdis > dis) {
+        } else if (mdis > dis) {
             answer.push(0);
-        }
-        else if (dis < pdis) {
+        } else if (dis < pdis) {
             answer.push(2);
         }
-    }
-    else {
+    } else {
         if (temp[2] == temp[5]) {
             answer.push(-1);
-        }
-        else {
+        } else {
             answer.push(0);
         }
     }

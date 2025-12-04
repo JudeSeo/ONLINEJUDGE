@@ -13,10 +13,8 @@ for (; ; i++) {
 let a = 0
 for (let j = sum[i - 1]; j < input; j++) {
     if (i % 2 == 0) {
-        // 1/4
         answer = Number(a + 1) + "/" + Number(i - a);
     } else {
-        // 5/1
         answer = Number(i - a) + "/" + Number(a + 1);
     }
     a++;

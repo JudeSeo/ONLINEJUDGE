@@ -6,5 +6,5 @@ let num = input.splice(0, 1)[0];
 input = input[0].split("");
 let char = input[0];
 let cnt = input.filter(v => v != char).length;
-let answer = cnt == 0 ? "Yes": "No";
+let answer = cnt == 0 ? "Yes" : "No";
 console.log(answer);

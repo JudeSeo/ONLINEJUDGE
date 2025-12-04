@@ -6,8 +6,8 @@ let answer = [];
 let [adj, noun, ...words] = input;
 let ad = words.splice(0, adj);
 let no = words.splice(0, noun);
-ad.forEach(v=>{
-    no.forEach(val=>{
+ad.forEach(v => {
+    no.forEach(val => {
         answer.push(`${v} as ${val}`);
     })
 })

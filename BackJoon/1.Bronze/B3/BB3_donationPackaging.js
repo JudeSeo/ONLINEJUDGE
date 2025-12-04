@@ -6,7 +6,7 @@ let answer = [];
 input = input.slice(1);
 let [a, b, c] = [0, 0, 0];
 input.forEach(v => {
-let package = 0;
+    let package = 0;
     let temp = v.split(" ").map(val => Number(val))
     a += temp[0];
     b += temp[1];

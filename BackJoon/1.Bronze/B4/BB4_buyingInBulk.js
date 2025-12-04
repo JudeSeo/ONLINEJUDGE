@@ -7,6 +7,6 @@ input.forEach(v => {
     answer.push(v);
     let temp = v.split(" ").map(val => Number(val));
     if (temp[0] == 1) answer.push(temp[0] * temp[1]);
-    else answer.push(temp[0]*temp[1]-((temp[0] - 1) * 2))
+    else answer.push(temp[0] * temp[1] - ((temp[0] - 1) * 2))
 })
 console.log(answer.join("\n"));

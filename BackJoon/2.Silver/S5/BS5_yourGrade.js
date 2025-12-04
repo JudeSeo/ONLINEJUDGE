@@ -48,5 +48,5 @@ input.forEach(v => {
             break;
     }
 });
-answer = (sum/cnt).toFixed(6);
+answer = (sum / cnt).toFixed(6);
 console.log(answer);

@@ -10,7 +10,7 @@ input.forEach(v => {
     for (let i = 0; i < temp.length - 1; i++) {
         if (temp[i] * 2 > temp[i + 1]) flag = false;
     }
-    if(flag) answer.push("Good coin denominations!");
+    if (flag) answer.push("Good coin denominations!");
     else answer.push("Bad coin denominations! ");
     answer.push("");
 })

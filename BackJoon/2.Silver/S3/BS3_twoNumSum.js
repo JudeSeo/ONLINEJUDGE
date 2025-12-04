@@ -9,8 +9,8 @@ let right = arr.length - 1;
 while (arr[left] >= input[1]) left++;
 while (arr[right] >= input[1]) right--;
 for (let i = left; i < right; i++) {
-    while(arr[i] + arr[right] > input[1]) right--;
-    if(i==right) break;
+    while (arr[i] + arr[right] > input[1]) right--;
+    if (i == right) break;
     if (arr[i] + arr[right] == input[1]) answer++;
 }
 console.log(answer);

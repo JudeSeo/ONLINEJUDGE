@@ -5,7 +5,7 @@ let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let num = parseInt(input[0]);
 let fibo = [0, 1];
 while (fibo.length <= num) {
-    fibo[fibo.length] = fibo[fibo.length-1]+fibo[fibo.length-2];
+    fibo[fibo.length] = fibo[fibo.length - 1] + fibo[fibo.length - 2];
 }
 
 console.log(fibo[num]);

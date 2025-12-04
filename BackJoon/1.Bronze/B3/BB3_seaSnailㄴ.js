@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 let input = [];
 rl.on("line", function (line) {
-    input=line
+    input = line
     rl.close();
 }).on("close", function () {
     solution(input);
@@ -16,7 +16,7 @@ const solution = (input) => {
     let answer = [];
     for (let i = 0; i < 5; i++) {
         let temp = "";
-        if (i==4) {
+        if (i == 4) {
             for (let j = 0; j < input; j++) {
                 for (let k = 0; k < 5 * input; k++) {
                     temp += "@";

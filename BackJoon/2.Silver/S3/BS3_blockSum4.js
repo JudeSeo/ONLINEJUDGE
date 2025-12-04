@@ -8,8 +8,8 @@ input = input.slice(2);
 input.forEach((v, index) => {
     let temp = v.split(" ");
     let sums = 0;
-    let i = parseInt(temp[0])-1
-    while (i < parseInt(temp[1])){
+    let i = parseInt(temp[0]) - 1
+    while (i < parseInt(temp[1])) {
         sums += parseInt(nums[i])
         i++;
     }

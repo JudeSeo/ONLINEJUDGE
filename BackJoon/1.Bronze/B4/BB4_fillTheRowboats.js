@@ -7,5 +7,5 @@ for (let i = 1; i <= input; i++) {
     answer.push(i);
     if (i % 6 == 0) answer.push("Go!")
 }
-if (input % 6 !=0) answer.push("Go!")
+if (input % 6 != 0) answer.push("Go!")
 console.log(answer.join(" "))

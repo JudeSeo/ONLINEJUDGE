@@ -1,6 +1,8 @@
 // 2022-06-10
+
 import java.io.*;
-import java.util.*;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class BS3_sequence {
     public static void main(String[] args) throws IOException {
@@ -23,7 +25,7 @@ public class BS3_sequence {
                 prefixSet[i] += numSet[j];
             }
         }
-        
+
         Arrays.sort(prefixSet);
         sb.append(prefixSet[prefixSet.length - 1]);
         bw.write(sb.toString());

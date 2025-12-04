@@ -1,5 +1,7 @@
 import java.io.*;
-import java.util.*;
+import java.util.Map;
+import java.util.StringTokenizer;
+import java.util.TreeMap;
 
 public class BB5_hongdae {
     public static void main(String[] args) throws IOException {
@@ -10,7 +12,7 @@ public class BB5_hongdae {
         StringBuilder sb = new StringBuilder();
         StringTokenizer st = new StringTokenizer(br.readLine());
         int num1 = Integer.parseInt(st.nextToken());
-        sb.append(num1-1946);
+        sb.append(num1 - 1946);
         bw.write(sb.toString());
         bw.flush();
         bw.close();

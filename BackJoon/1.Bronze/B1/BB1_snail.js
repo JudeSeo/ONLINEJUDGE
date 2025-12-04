@@ -6,7 +6,7 @@ let up = parseInt(input[0].split(" ")[0]);
 let down = parseInt(input[0].split(" ")[1]);
 let dist = up - down
 let top = parseInt(input[0].split(" ")[2]);
-let answer = Math.ceil((top - down)/dist);
+let answer = Math.ceil((top - down) / dist);
 console.log(answer);
 
 // 걍 while문 썻다가 시간초과...

@@ -9,7 +9,7 @@ for (let i = 0; i < 5; i++) {
     if (i == 0) {
         for (let j = 0; j < input; j++) {
             for (let k = 0; k < 5 * input; k++) {
-                if( k < 3 * input || k >= 4 * input)
+                if (k < 3 * input || k >= 4 * input)
                     temp += "@";
                 else
                     temp += " ";
@@ -19,14 +19,14 @@ for (let i = 0; i < 5; i++) {
     } else if (i == 4) {
         for (let j = 0; j < input; j++) {
             for (let k = 0; k < 5 * input; k++) {
-                if(k < 1 * input || k >= 2 * input)
+                if (k < 1 * input || k >= 2 * input)
                     temp += "@";
                 else
                     temp += " ";
             }
             temp += "\n";
         }
-    }else {
+    } else {
         for (let j = 0; j < input; j++) {
             for (let k = 0; k < input; k++) {
                 temp += "@";

@@ -5,7 +5,7 @@ var input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n
 let answer = [];
 let max = Math.max(...input);
 let t = [0];
-for (let i = 1; i <= max+1; i++) {
+for (let i = 1; i <= max + 1; i++) {
     t[i] = t[i - 1] + i;
 }
 input.forEach(v => {

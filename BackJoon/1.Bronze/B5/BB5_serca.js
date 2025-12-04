@@ -4,7 +4,7 @@ let fs = require('fs');
 let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n')[0];
 for (let i = 0; i < input; i++) {
     console.log(
-` @@@   @@@ 
+        ` @@@   @@@ 
 @   @ @   @
 @    @    @
 @         @

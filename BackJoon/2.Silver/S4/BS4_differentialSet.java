@@ -1,6 +1,9 @@
 // 2022-06-10
+
 import java.io.*;
-import java.util.*;
+import java.util.Set;
+import java.util.StringTokenizer;
+import java.util.TreeSet;
 
 public class BS4_differentialSet {
     public static void main(String[] args) throws IOException {
@@ -24,7 +27,7 @@ public class BS4_differentialSet {
             if (integerSet.contains(num))
                 integerSet.remove(num);
         }
-        sb.append(integerSet.size()+"\n");
+        sb.append(integerSet.size() + "\n");
         for (Integer i : integerSet)
             sb.append(i + " ");
 

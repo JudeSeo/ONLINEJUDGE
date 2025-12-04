@@ -18,7 +18,8 @@ for (let i = 2; i < input.length; i++) {
             b = b % a;
     }
     greatest = a + b;
-};
+}
+;
 answer.push(greatest);
 for (let i = 2; i <= Math.sqrt(greatest); i++) {
     if (greatest == i * i)

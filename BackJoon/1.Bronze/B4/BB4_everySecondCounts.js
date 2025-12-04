@@ -15,7 +15,7 @@ if (min < 0) {
     min += 60;
     hour -= 1;
 }
-if(hour<0)
-    hour+=24;
+if (hour < 0)
+    hour += 24;
 let answer = hour * 3600 + min * 60 + sec;
 console.log(answer);

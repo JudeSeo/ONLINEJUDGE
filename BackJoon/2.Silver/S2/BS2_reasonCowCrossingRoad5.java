@@ -1,6 +1,8 @@
 // 2022-06-10
+
 import java.io.*;
-import java.util.*;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class BS2_reasonCowCrossingRoad5 {
     public static void main(String[] args) throws IOException {
@@ -18,7 +20,7 @@ public class BS2_reasonCowCrossingRoad5 {
 
         for (int i = 0; i < num3; i++) {
             st = new StringTokenizer(br.readLine());
-            numSet[Integer.parseInt(st.nextToken())-1] = 1;
+            numSet[Integer.parseInt(st.nextToken()) - 1] = 1;
         }
         for (int i = 0; i < num1 - num2 + 1; i++) {
             int cnt = 0;

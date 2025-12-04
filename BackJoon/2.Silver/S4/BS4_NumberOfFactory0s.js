@@ -11,7 +11,7 @@ while (input > 0) {
 answer = answer.toString().split("").map(v => (Number(v))).reverse();
 let ans = 0;
 for (let i = 0; i < answer.length; i++) {
-    if(answer[i] !== 0){
+    if (answer[i] !== 0) {
         ans = i;
         break;
     }

@@ -12,8 +12,8 @@ let list = {
     Notebooks: 11.20,
     Ink: 66.95,
 }
-input.forEach(v=>{
-    if(v=="EOI") return;
+input.forEach(v => {
+    if (v == "EOI") return;
     answer += list[v];
 })
 console.log(`$${answer.toFixed(2)}`);

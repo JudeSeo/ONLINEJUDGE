@@ -9,9 +9,9 @@ input.forEach(v => {
     for (let i = 2; i < 6; i++) {
         arr[i] = arr[i - 1] - arr[i - 2];
     }
-    let num = (temp[2] - 1)%6;
-    while(arr[num]<0){
-        arr[num] += (10**9+7);
+    let num = (temp[2] - 1) % 6;
+    while (arr[num] < 0) {
+        arr[num] += (10 ** 9 + 7);
     }
     answer.push(arr[num] % 1000000007);
 })

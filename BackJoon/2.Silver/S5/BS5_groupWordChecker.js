@@ -8,7 +8,7 @@ input.forEach(v => {
     let arr = [];
     let flag = true;
     for (let i = 0; i < temp.length; i++) {
-        while(temp[i] === temp[i+1]){
+        while (temp[i] === temp[i + 1]) {
             i++;
         }
         if (!arr.includes(temp[i])) arr.push(temp[i]);

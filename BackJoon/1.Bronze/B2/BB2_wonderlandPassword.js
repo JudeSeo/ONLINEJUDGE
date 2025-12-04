@@ -9,7 +9,7 @@ input.forEach((v, i) => {
     let temp = v.split("");
     for (let j = 0; j < temp.length; j++) {
         str += temp[j];
-        j += (i+1);
+        j += (i + 1);
     }
     answer.push(str);
 })

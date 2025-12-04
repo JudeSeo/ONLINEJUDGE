@@ -19,7 +19,7 @@ input.forEach(v => {
         hour -= 24
         day++;
     }
-    if (day > 0) answer.push(`${hour.toString().padStart(2,'0')}:${min.toString().padStart(2,'0')} +${day}`)
-    else answer.push(`${hour.toString().padStart(2,'0')}:${min.toString().padStart(2,'0')}`)
+    if (day > 0) answer.push(`${hour.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')} +${day}`)
+    else answer.push(`${hour.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}`)
 })
 console.log(answer.join("\n"))

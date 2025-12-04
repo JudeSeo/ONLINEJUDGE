@@ -8,4 +8,4 @@ temp.sort((a, b) => {
 });
 let answer = input.indexOf(temp[0])
 console.log(temp[0])
-console.log(answer+1)
+console.log(answer + 1)

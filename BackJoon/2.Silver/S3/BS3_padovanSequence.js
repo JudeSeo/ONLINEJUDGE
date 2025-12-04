@@ -9,5 +9,5 @@ for (let i = 0; i < max; i++) {
     answer[i + 3] = answer[i] + answer[i + 1];
 }
 input.forEach((v, i) => {
-    console.log(answer[v-1]);
+    console.log(answer[v - 1]);
 })

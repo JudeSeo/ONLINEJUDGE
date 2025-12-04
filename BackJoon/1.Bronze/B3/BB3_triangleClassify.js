@@ -4,7 +4,7 @@ let fs = require('fs');
 let input = fs.readFileSync("예제.txt").toString().trim().split('\r\n').slice(1);
 let answer = [];
 input.forEach((v, i) => {
-    let temp = v.split(" ").map(v => Number(v)).sort((a, b) => b-a);
+    let temp = v.split(" ").map(v => Number(v)).sort((a, b) => b - a);
     if (temp[0] >= (temp[1] + temp[2])) answer.push(`Case #${i + 1}: invalid!`);
     else if (temp[0] == temp[2]) answer.push(`Case #${i + 1}: equilateral`);
     else if (temp[0] == temp[1] || temp[1] == temp[2]) answer.push(`Case #${i + 1}: isosceles`);

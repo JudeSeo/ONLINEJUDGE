@@ -7,6 +7,6 @@ for (let i = 1; i < input.length; i++) {
     let len = input[i - 1].length;
     if (input[i].length < len)
         answer += " "
-    else answer += input[i].split("")[len-1]
+    else answer += input[i].split("")[len - 1]
 }
 console.log(answer);

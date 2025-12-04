@@ -7,6 +7,6 @@ while (input.length > 1) {
     let num = input.splice(0, 1)[0];
     let temp1 = input.splice(0, num);
     let first = [...temp1].map(v => v.toLowerCase()).sort()[0];
-    answer.push(temp1.find(v=>v.toLowerCase() == first));
+    answer.push(temp1.find(v => v.toLowerCase() == first));
 }
 console.log(answer.join("\n"));

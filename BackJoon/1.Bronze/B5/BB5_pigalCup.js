@@ -12,5 +12,5 @@ for (let i = 1; i < input; i++) {
     }
     date = new Date(year, month, 1);
 }
-let answer=[date.getFullYear(), date.getMonth()+1];
+let answer = [date.getFullYear(), date.getMonth() + 1];
 console.log(answer.join(" "));

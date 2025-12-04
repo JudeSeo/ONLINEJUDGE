@@ -6,4 +6,4 @@ let str = "";
 for (let i = 1; i <= input; i++) {
     str += i
 }
-console.log(str.indexOf(input)+1);
+console.log(str.indexOf(input) + 1);

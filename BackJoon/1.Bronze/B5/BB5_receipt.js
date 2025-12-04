@@ -5,10 +5,10 @@ let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n');
 let answer = "Yes";
 let total = input[0];
 input = input.slice(2);
-input.forEach(v=>{
+input.forEach(v => {
     let temp = v.split(" ");
-    total -= (temp[0]*temp[1])
+    total -= (temp[0] * temp[1])
 })
-if(total != 0)
-    answer="No";
+if (total != 0)
+    answer = "No";
 console.log(answer);

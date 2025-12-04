@@ -10,7 +10,7 @@ input.forEach(v => {
     temp.map(val => avg += val);
     avg /= temp.length;
     let bigger = (temp.filter(val => val > avg).length) / temp.length * 100;
-    answer.push(`${(avg+ 1e-10).toFixed(3)} ${(bigger+ 1e-10).toFixed(3)}%`)
+    answer.push(`${(avg + 1e-10).toFixed(3)} ${(bigger + 1e-10).toFixed(3)}%`)
 })
 console.log(answer.join("\n"));
 

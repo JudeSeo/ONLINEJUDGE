@@ -7,15 +7,15 @@ let [d, b] = input[0].split(" ");
 input = input.slice(1);
 let dd = new Set();
 let bb = new Set();
-for(let i=0; i<input.length; i++) {
-    if(i < d) {
+for (let i = 0; i < input.length; i++) {
+    if (i < d) {
         dd.add(input[i]);
     } else {
         bb.add(input[i]);
     }
 }
 bb.forEach((v, i) => {
-    if(dd.has(v)) answer.push(v);
+    if (dd.has(v)) answer.push(v);
 })
 answer.sort();
 console.log(answer.length)

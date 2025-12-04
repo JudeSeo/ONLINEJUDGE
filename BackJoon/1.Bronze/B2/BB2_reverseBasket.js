@@ -10,7 +10,7 @@ input.forEach(v => {
     let temp = v.split(" ").map(val => Number(val));
     let tmp = list.slice(temp[0] - 1, temp[1]).reverse();
     tmp.forEach((val, i) => {
-        list[temp[0]-1 + i] = val;
+        list[temp[0] - 1 + i] = val;
     })
 })
 console.log(list.join(" "));

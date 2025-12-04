@@ -4,21 +4,21 @@ let fs = require('fs');
 let input = fs.readFileSync("../../../예제.txt").toString().trim().split('\r\n')[0].split("");
 let answer = "";
 input.forEach(v => {
-    if(v == "I")
+    if (v == "I")
         answer += "E";
-    else if(v == "E")
+    else if (v == "E")
         answer += "I";
-    else if(v == "S")
+    else if (v == "S")
         answer += "N";
-    else if(v == "N")
+    else if (v == "N")
         answer += "S";
-    else if(v == "T")
+    else if (v == "T")
         answer += "F";
-    else if(v == "F")
+    else if (v == "F")
         answer += "T";
-    else if(v == "J")
+    else if (v == "J")
         answer += "P";
-    else if(v == "P")
+    else if (v == "P")
         answer += "J";
 })
 console.log(answer)

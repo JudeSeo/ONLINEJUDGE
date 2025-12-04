@@ -18,7 +18,7 @@ input.forEach(v => {
     }
     if (hour < 0)
         hour += 24;
-    let arr= [hour, min, sec];
+    let arr = [hour, min, sec];
     answer.push(arr.join(" "))
 })
 console.log(answer.join("\n"));

@@ -3,7 +3,7 @@ let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 let input = fs.readFileSync("예제.txt").toString().trim().split('\r\n');
 let answer = [], loca = [];
-input.forEach(v=>{
+input.forEach(v => {
     loca.push(v.trim().split("").length);
 })
 answer.push(`Latitude ${loca[0]}:${loca[1]}:${loca[2]}`)

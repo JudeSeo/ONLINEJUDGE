@@ -5,5 +5,5 @@ let input = fs.readFileSync('예제.txt').toString().trim().split('\r\n')[0].spl
 let answer = 0n;
 let a = BigInt(input[0]);
 let b = BigInt(input[1]);
-answer = a+b;
+answer = a + b;
 console.log(answer.toString());

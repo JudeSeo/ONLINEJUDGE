@@ -16,7 +16,7 @@ while (input.length) {
     arr.forEach((v, i) => {
         sum *= (v[1] + 1)
     })
-    answer.push(sum-1);
+    answer.push(sum - 1);
 }
 
 console.log(answer.join("\n"));

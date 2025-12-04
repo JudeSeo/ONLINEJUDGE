@@ -9,7 +9,7 @@ let s = input.slice(0, first);
 let check = input.slice(first, first + second)
 let answer = 0;
 s.forEach((v, i) => {
-    answer += check.filter((value) => (value == v && value !==undefined)).length
+    answer += check.filter((value) => (value == v && value !== undefined)).length
 });
 
 console.log(answer);

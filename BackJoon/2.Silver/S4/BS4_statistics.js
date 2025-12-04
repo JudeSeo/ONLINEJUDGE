@@ -30,7 +30,7 @@ keys.forEach((val, idx) => {
         temp.push(parseInt(val));
 });
 temp.sort((a, b) => {
-    return a-b;
+    return a - b;
 });
 let set = new Set(temp);
 temp = Array.from(set)
