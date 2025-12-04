@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.math.BigInteger;
 
-public class Main {
+public class BB5_factorial3 {
 
     private static final int SIMPLE_THRESHOLD = 10;
 

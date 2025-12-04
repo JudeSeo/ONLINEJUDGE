@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class BS4_memorizingKing {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

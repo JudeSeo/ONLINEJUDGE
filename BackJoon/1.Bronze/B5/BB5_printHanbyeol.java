@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class BB5_printHanbyeol {
     static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
