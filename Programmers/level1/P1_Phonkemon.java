@@ -1,5 +1,5 @@
 // 2026-01-08
-package Programmers;
+package Programmers.level1;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,5 +1,5 @@
 // 2026-01-01
-package Programmers;
+package Programmers.level1;
 
 class P1_bunchOfCard {
     public static void main(String[] args) {

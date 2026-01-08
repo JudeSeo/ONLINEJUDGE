@@ -1,5 +1,5 @@
 // 2025-12-31
-package Programmers;
+package Programmers.level1;
 
 class P1_flexibleWorkSystem {
     public static void main(String[] args) {

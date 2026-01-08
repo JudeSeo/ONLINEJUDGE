@@ -1,5 +1,5 @@
 // 2025-12-30
-package Programmers;
+package Programmers.level1;
 
 class P1_getPostbox {
     public static void main(String[] args) {
